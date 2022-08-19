@@ -1,0 +1,423 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+}
+
+/* -------------------------- navbar style ------------------ */
+
+nav {
+  display: flex;
+  padding: 10px 7%;
+  justify-content: space-between;
+  background-color: rgb(45, 179, 145);
+  position: fixed;
+  width: 100%;
+  height: 80px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  height: 100%;
+}
+
+.logo h3 {
+  text-transform: uppercase;
+}
+
+.logo-image {
+  width: 60px;
+  height: 100%;
+  border-radius: 10px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+ul a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+
+ul a:first-child {
+  background-color: blue;
+}
+
+ul a:hover {
+  background-color: rgb(223, 210, 33);
+  color: #000;
+}
+
+/* ---------------------------- Home Style -------------------------- */
+
+#Home {
+  background-color: #1d486b;
+  color: #fff;
+  display: flex;
+  padding: 120px 15%;
+  align-items: flex-start;
+  gap: 5%;
+}
+
+.home-text {
+  box-shadow: rgba(255, 255, 255, 0.5) 2px 3px 5px;
+  width: 45%;
+  height: 220px;
+  padding: 10px 30px;
+}
+
+.home-text h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: blue;
+  margin-top: 20px;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+}
+
+.home-text button:hover {
+  background-color: rgb(223, 210, 33);
+  color: #000;
+}
+
+.home-image {
+  width: 45%;
+  height: 220px;
+}
+
+.home-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* -------------------------------------- Items style ----------------------------------- */
+
+#Items {
+  padding: 100px 20px;
+  padding-bottom: 20px;
+}
+
+.item-contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.shoes {
+  width: 300px;
+  margin-bottom: 30px;
+  box-shadow: rgba(0, 0, 0, 0.6) 8px 7px 9px;
+}
+
+#Items h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.shoes img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.shoes p {
+  font-size: 17px;
+  padding: 10px 0;
+  background-color: rgb(75, 85, 20);
+  color: #fff;
+  text-align: center;
+}
+
+/* ---------------------------- About Style ---------------------------- */
+
+#About {
+  padding: 80px 12%;
+  background-color: #326960;
+  color: #fff;
+}
+
+#About h2 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* ---------------------------- Contact Style ------------------------------ */
+#Contact {
+  padding: 60px 20%;
+  padding-bottom: 60px;
+}
+
+.contact-box {
+  display: flex;
+  background-color: aqua;
+  justify-content: space-between;
+  padding: 30px;
+  align-items: center;
+}
+
+.contact-text {
+  width: 72%;
+}
+
+.contact-button {
+  width: 20%;
+}
+
+/* ------------------------------- footer style -------------------------- */
+footer {
+  text-align: center;
+  background-color: #326960;
+  color: #fff;
+  padding: 20px;
+}
+
+/* ------------------------------- media query -------------------------------- */
+
+/* --------- Medium-Size Devices------------- */
+
+@media (max-width: 991px) and (min-width: 768px) {
+  /* ---------- navbar style ------------- */
+  nav {
+    padding: 10px 5%;
+  }
+
+  .logo {
+    align-items: center;
+    gap: 8px;
+  }
+
+  .logo-image {
+    width: 50px;
+  }
+
+  ul a {
+    margin: 0 15px;
+    font-size: 17px;
+    padding: 4px 8px;
+  }
+
+  /* ---------- Home Style ------------- */
+  #Home {
+    padding: 100px 10%;
+  }
+
+  .home-text {
+    height: 240px;
+    padding: 10px 25px;
+  }
+
+  .home-text h1 {
+    margin-bottom: 17px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 18px;
+    margin-top: 16px;
+  }
+
+  .home-image {
+    height: 240px;
+  }
+
+  /* ------------ Items style ---------------- */
+  #Items {
+    padding: 100px 50px;
+  }
+
+  .shoes p {
+    font-size: 15px;
+  }
+
+  /* ---------- About Style ------------ */
+  #About {
+    padding: 60px 10%;
+  }
+
+  /* ------------ Contact Style ------------- */
+  #Contact {
+    padding: 50px 15%;
+  }
+
+  .contact-box {
+    padding: 25px;
+  }
+
+  .contact-text {
+    width: 72%;
+  }
+
+  .contact-text h2 {
+    font-size: 18px;
+  }
+
+  .contact-button {
+    width: 26%;
+  }
+}
+
+/* --------- Small-Size Devices------------- */
+
+@media (max-width: 767px) {
+  /* ---------- navbar style ------------- */
+  nav {
+    padding: 10px 3%;
+    justify-content: space-evenly;
+    height: 60px;
+  }
+
+  .logo h3 {
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+
+  .logo-image {
+    object-fit: cover;
+  }
+
+  ul a {
+    margin: 0 6px;
+    font-size: 12px;
+    padding: 3px 6px;
+  }
+
+  /* --------------- Home Style -------------- */
+
+  #Home {
+    padding: 80px 7%;
+    padding-bottom: 20px;
+  }
+
+  .home-text {
+    width: 48%;
+    height: 200px;
+    padding: 5px 14px;
+  }
+
+  .home-text h1 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .home-text p {
+    font-size: 12px;
+  }
+
+  button {
+    padding: 3px 10px;
+    font-size: 12px;
+    margin-top: 8px;
+    border-radius: 10px;
+  }
+
+  .home-image {
+    width: 48%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .home-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  /* -------------- Items style --------------- */
+
+  #Items {
+    padding: 80px 0px;
+    padding-bottom: 20px;
+  }
+
+  .item-contents {
+    justify-content: space-evenly;
+  }
+
+  .shoes {
+    margin-bottom: 25px;
+  }
+
+  #Items h1 {
+    margin-bottom: 22px;
+    font-size: 15px;
+  }
+
+  .shoes img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .shoes p {
+    font-size: 14px;
+    padding: 6px 0;
+  }
+
+  /* -------------- About Style --------------- */
+
+  #About {
+    padding: 40px 6%;
+  }
+
+  #About p {
+    font-size: 12px;
+  }
+
+  #About h2 {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  /* --------------- Contact Style -------------- */
+  #Contact {
+    padding: 40px 7%;
+  }
+
+  .contact-box {
+    padding: 10px;
+    align-items: center;
+  }
+
+  .contact-box h2 {
+    font-size: 14px;
+  }
+
+  .contact-box p {
+    font-size: 12px;
+  }
+  .contact-text {
+    width: 72%;
+  }
+
+  .contact-button {
+    width: 26%;
+  }
+
+  /* -------- footer --------- */
+  footer {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
